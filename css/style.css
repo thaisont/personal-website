@@ -84,53 +84,83 @@ header {
     box-sizing: border-box;
 }
 
+/* navigation */
+
 .primary-nav {
-  background-color: #ddd;
-  text-align: right;
-  padding-bottom: 5%;
+  background-color: ;
+  margin-top: 50px;
+  float: right;
+  
 }
 
 .primary-nav ul li {
   display: inline;
-  padding: 30px;
+  padding: 10px;
+  padding-right: 20px;
+
 }
 
 .primary-nav ul li a {
-  color: blue;
+  color: black;
   text-align: right;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 20px;
 }
+
+
+
+/* About me */
 
 .primary-header {
   max-width: 90%;
-  margin: auto;
-  background-color: pink;
+  margin-left: 5%;
+ 
+  
+  color: rgb(59, 34, 34);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 45px;
+ 
+  
 }
+
+#page2 .primary-header {
+    text-align: center;
+}
+
+#page3 .primary-header {
+    text-align: center;
+}
+
+#page3 .video-gif {
+    display: block;
+    
+}
+
+#page4 .primary-header {
+    text-align: center;
+}
+
+#page4 .no-contact {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-size: 40px;
+    padding-left: 5px;
+}
+
+
+/* Banner */
 
 .title {
   text-align: center;
   padding-bottom: 15%;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-transform: capitalize;
-  font-size: 25px;
+  font-size: 35px;
   background-position: cover;
-  background: linear-gradient(#333fad, transparent 100%),
-    grey url(../img/background.jpg) no-repeat center  / cover;
-
-  text-shadow: 0 1px 0 black,
-               0 2px 0 black,
-               0 3px 0 black,
-               0 4px 0 black,
-               0 5px 0 black,
-               0 6px 1px rgba(0,0,0,.1),
-               0 0 5px rgba(0,0,0,.1),
-               0 1px 3px rgba(0,0,0,.3),
-               0 3px 5px rgba(0,0,0,.2),
-               0 5px 10px rgba(0,0,0,.25),
-               0 10px 10px rgba(0,0,0,.2),
-               0 20px 20px rgba(0,0,0,.15);
+  background: linear-gradient(#060f61, transparent 100%),
+    grey url(../img/background.jpg) no-repeat center / cover;
+  
 }
 
 .profile-picture {
@@ -138,17 +168,27 @@ header {
     border-color: rgb(15, 231, 15);
     border-style: outset;
     position: absolute;
-    top: 10px;
+    top:  100px;
+    width: 20%;
+    display: block;
+    margin-left: 40%;
+    height: auto;
+    max-width: 100%;
 }
+
 
 .about-me {
   padding-top: 300px;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
+  max-height: 100%;
 
 }
 
+/* Footer */
+
 footer {
   text-align: center;
+  color: black;
 }
 
 #main-footer a {
@@ -160,16 +200,12 @@ footer {
   background-color: lightgray;
 }
 
+
 .list ul li {
   display: inline;
-  padding: 30px;
+  padding: 20px;
 }
 
-.list a {
-  color: blueviolet;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-decoration: none;
-}
 
 .list :hover {
   color: lightsalmon;
@@ -182,13 +218,82 @@ footer {
 }
 
 .column {
-  flex: 1;
-  background-color: blue;
-  padding-right: 5%;
+  flex: 2;
+  padding-right: 8%;
+  color: black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  margin-top: -4%;
   
 }
 
-icon-image{
+.icon-image{
+    width: 15%;
+    margin-left: 1%;
+    margin-top: 1%;
+    
+}
+
+/* Media Queries */
+
+@media (max-width: 400px) {
+    .primary-nav {
+        float: right;
+        margin-top: 15px;
+        padding-right: 10px;
+
+
+    }   
+}
+
+@media (max-width: 400px) {
+    .primary-nav ul li {
     display: inline;
-    padding: 30px;
+    margin-top: 2px;
+    padding: 5px;
+    
+  
+  }
+
+
+@media (max-width: 400px) {
+    .primary-nav ul li a {
+    color: black;
+    text-align: right;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+@media (max-width: 400px) {
+    .about-me {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .row {
+        display: block;
+        margin-top: 20px;
+         
+    }
+}
+
+@media (max-width: 400px) {
+    .icon-image {
+        margin-top: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
