@@ -1,82 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
+
 body {
   color: white;
+  font-family: 'Roboto', sans-serif;
 }
 
-/* h1 {
-  font-size: 50px;
-  color: rgb(48, 36, 36);
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-body span {
-  color: black;
-  font-size: 26px;
-}
-
-
-
-.primary-content {
-  text-align: center;
-}
-
-
-
-.primary-header {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: firebrick;
-  font-size: 30px;
-  padding: 12px;
-}
-
-.container {
-  font-size: 16px;
-  text-align: center;
-  text-decoration: none;
-  padding: 5px 20px;
-  background-color: blue;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-
-ul li {
-  justify-content: space-between;
-  list-style-type: none;
-  margin-left: 15px;
-}
-
-.header-container {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 20px;
-  text-align: center;
-  color: grey;
-  padding-top: 1.5em;
-  padding-bottom: 1.5em;
-}
-
-header {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-align: center;
-  color: black;
-}
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Class selector */
-
-/* .social-icon {
-  text-align: center;
-}
-
-.back-top {
-  color: #2c3e50;
-}
-
-.back-top:hover { 
-  color: black;
-}  */
 
 
 
@@ -103,7 +31,6 @@ header {
 .primary-nav ul li a {
   color: black;
   text-align: right;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-decoration: none;
   font-size: 20px;
 }
@@ -118,7 +45,6 @@ header {
  
   
   color: rgb(59, 34, 34);
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 45px;
  
   
@@ -142,7 +68,6 @@ header {
 }
 
 #page4 .no-contact {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: black;
     font-size: 40px;
     padding-left: 5px;
@@ -152,29 +77,18 @@ header {
 /* Banner */
 
 .title {
+  position: relative;
   text-align: center;
   padding-bottom: 15%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-transform: capitalize;
   font-size: 35px;
   background-position: cover;
   background: linear-gradient(#060f61, transparent 100%),
     grey url(../img/background.jpg) no-repeat center / cover;
-  
+
 }
 
-.profile-picture {
-    border-radius: 50%;
-    border-color: rgb(15, 231, 15);
-    border-style: outset;
-    position: absolute;
-    top:  100px;
-    width: 20%;
-    display: block;
-    margin-left: 40%;
-    height: auto;
-    max-width: 100%;
-}
+
 
 
 .about-me {
@@ -221,7 +135,6 @@ footer {
   flex: 2;
   padding-right: 8%;
   color: black;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 20px;
   margin-top: -4%;
   
@@ -236,6 +149,7 @@ footer {
 
 /* Media Queries */
 
+/* 
 @media (max-width: 400px) {
     .primary-nav {
         float: right;
@@ -260,7 +174,6 @@ footer {
     .primary-nav ul li a {
     color: black;
     text-align: right;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     text-decoration: none;
     font-size: 14px;
   }
@@ -284,8 +197,63 @@ footer {
         margin-top: 15px;
     }
 }
+*/
 
+/* Mobile layout */
 
+    .primary-title {
+      font-size: 16px;
+    }
+
+    .profile-picture {
+    border-radius: 50%;
+    border-color: rgb(15, 231, 15);
+    border-style: outset;
+    position: absolute;
+    top:  -100px;
+    /* width: 100px; */
+    display: block;
+    height: auto;
+    max-width: 100%;
+    left: 50%;
+    margin-left: -100px;
+}
+
+/* Small device */
+
+  @media (min-width: 540px) {
+    .primary-title {
+      font-size: 24px;
+    }
+  }
+
+  /* Tablet */
+
+  @media (min-width: 768px) {
+    .primary-title {
+      font-size: 32px;
+    }
+  }
+
+  /* Small desktop */
+
+  @media (min-width: 900px) {
+    .primary-title {
+      font-size: 48px;
+    }
+  }
+
+  @media (min-width: 900px) {
+    .primary-title {
+      font-size: 48px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .primary-title {
+      font-size: 60px;
+    }
+  }
 
 
 
