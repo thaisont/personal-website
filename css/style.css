@@ -5,53 +5,82 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-
-
-
 * {
-    box-sizing: border-box;
+    box-sizing: border-box;    
 }
 
-/* navigation */
+
+
+li, a {
+   font-weight: 500;
+   font-size: 18px;
+   text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+} 
+
+.icon-image {
+  cursor: pointer;
+  width: 80%;
+  padding: 10px;
+  border: black;
+  border-style: dotted;
+}
 
 .primary-nav {
-  background-color: ;
-  margin-top: 50px;
-  float: right;
+  list-style: none;
+}
+
+ .primary-nav li {
+   display: inline-flex;
+   padding: 10px;
+ }
+
+ .primary-nav li a {
+   transition: all 0.8s ease 0s;
   
-}
-
-.primary-nav ul li {
-  display: inline;
-  padding: 10px;
-  padding-right: 20px;
-
-}
-
-.primary-nav ul li a {
-  color: black;
-  text-align: right;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-
+   color: rgb(19, 77, 185);
+  
+ } 
+ 
+ .primary-nav li :hover {
+   color: green;
+ }
 
 /* About me */
 
 .primary-header {
-  max-width: 90%;
-  margin-left: 5%;
- 
-  
-  color: rgb(59, 34, 34);
-  font-size: 45px;
- 
+  color: rgb(19, 77, 185);
+}
+
+#page2 .primary-title {
+  font-size:54px;
   
 }
 
 #page2 .primary-header {
-    text-align: center;
+    text-align: left;
+    
+}
+
+#page2 .row {
+  display: flex;
+  max-width: 90%;
+  margin: auto;
+}
+
+#page2 .column {
+  flex: 2;
+  padding-right: 8%;
+  color: black;
+  font-size: 20px;
+  margin-top: -4%;
+  
 }
 
 #page3 .primary-header {
@@ -79,73 +108,86 @@ body {
 .title {
   position: relative;
   text-align: center;
-  padding-bottom: 15%;
-  text-transform: capitalize;
-  font-size: 35px;
+  padding-bottom: 10%;
   background-position: cover;
-  background: linear-gradient(#060f61, transparent 100%),
-    grey url(../img/background.jpg) no-repeat center / cover;
-
-}
-
-
-
+  background:url(../img/default-social-3-b0dfab051089b234a4ec6b009154a1f5.png) no-repeat center / cover;
+  background-size: 120%;
+  margin-top: -10px;
+  
+} 
 
 .about-me {
-  padding-top: 300px;
+  padding-top: 200px;
   letter-spacing: 2px;
   max-height: 100%;
+  font-size: 20px;
 
 }
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  border-style: dotted;
+  padding: 10px;
+}
+
+.column {
+  padding-right: 20px;
+}
+
+
 
 /* Footer */
 
 footer {
   text-align: center;
   color: black;
+  width: 100%;
 }
+
 
 #main-footer a {
   color: rgba(9, 2, 66, 0.822);
 }
 
-.list {
+.footer-section {
   text-align: center;
-  background-color: lightgray;
+  background-color: grey;
+
 }
 
-
-.list ul li {
-  display: inline;
-  padding: 20px;
-}
-
-
-.list :hover {
-  color: lightsalmon;
-}
-
-.row {
-  display: flex;
-  max-width: 90%;
-  margin: auto;
-}
-
-.column {
-  flex: 2;
-  padding-right: 8%;
-  color: black;
-  font-size: 20px;
-  margin-top: -4%;
+.list ul {
   
 }
 
-.icon-image{
-    width: 15%;
-    margin-left: 1%;
-    margin-top: 1%;
-    
+.list img {
+  width: 30px;
+  
 }
+
+.list ul li {
+  display: inline-flex;
+  position: relative;
+  flex-direction: column;
+  background-color: grey;
+  padding-right: 10px;
+  flex-wrap
+
+ 
+   
+}
+
+.list ul li a {
+  text-decoration: none;
+}
+
+.copy-right {
+  
+}
+
+
+
+
 
 /* Media Queries */
 
@@ -203,6 +245,7 @@ footer {
 
     .primary-title {
       font-size: 16px;
+      padding-left: 10px;
     }
 
     .profile-picture {
@@ -211,9 +254,6 @@ footer {
     border-style: outset;
     position: absolute;
     top:  -100px;
-    /* width: 100px; */
-    display: block;
-    height: auto;
     max-width: 100%;
     left: 50%;
     margin-left: -100px;
@@ -251,7 +291,7 @@ footer {
 
   @media (min-width: 1200px) {
     .primary-title {
-      font-size: 60px;
+      font-size: 54px;
     }
   }
 
