@@ -17,29 +17,29 @@ li, a {
    text-decoration: none;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px;
-} 
 
 .icon-image {
   cursor: pointer;
   width: 80%;
   padding: 10px;
-  border: black;
-  border-style: dotted;
 }
+
+ header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+ }
 
 .primary-nav {
   list-style: none;
 }
 
- .primary-nav li {
+.primary-nav li {
    display: inline-flex;
    padding: 10px;
  }
+ 
 
  .primary-nav li a {
    transition: all 0.8s ease 0s;
@@ -55,7 +55,8 @@ header {
 /* About me */
 
 .primary-header {
-  color: rgb(19, 77, 185);
+  color: black;
+  margin-bottom: 40px;
 }
 
 #page2 .primary-title {
@@ -127,8 +128,8 @@ header {
 .container {
   display: flex;
   flex-wrap: nowrap;
-  border-style: dotted;
   padding: 10px;
+ 
 }
 
 .column {
@@ -150,96 +151,38 @@ footer {
   color: rgba(9, 2, 66, 0.822);
 }
 
-.footer-section {
-  text-align: center;
-  background-color: grey;
 
+footer {
+  background-color: rgba(22, 33, 61, 0.904);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+
+} 
+
+.copy-right {
+  padding: 10px;
+  color: white;
 }
 
-.list ul {
+.list li {
+  padding: 20px;
+   display: inline-flex;
   
-}
-
-.list img {
-  width: 30px;
   
-}
-
-.list ul li {
-  display: inline-flex;
-  position: relative;
-  flex-direction: column;
-  background-color: grey;
-  padding-right: 10px;
-  flex-wrap
-
- 
-   
-}
+ }
 
 .list ul li a {
   text-decoration: none;
 }
 
-.copy-right {
-  
+.list ul li a :hover {
+  color: teal;
+  visibility: visible;
+  opacity: 1;
 }
 
-
-
-
-
-/* Media Queries */
-
-/* 
-@media (max-width: 400px) {
-    .primary-nav {
-        float: right;
-        margin-top: 15px;
-        padding-right: 10px;
-
-
-    }   
-}
-
-@media (max-width: 400px) {
-    .primary-nav ul li {
-    display: inline;
-    margin-top: 2px;
-    padding: 5px;
-    
-  
-  }
-
-
-@media (max-width: 400px) {
-    .primary-nav ul li a {
-    color: black;
-    text-align: right;
-    text-decoration: none;
-    font-size: 14px;
-  }
-
-@media (max-width: 400px) {
-    .about-me {
-        padding: 10px;
-    }
-}
-
-@media (max-width: 400px) {
-    .row {
-        display: block;
-        margin-top: 20px;
-         
-    }
-}
-
-@media (max-width: 400px) {
-    .icon-image {
-        margin-top: 15px;
-    }
-}
-*/
 
 /* Mobile layout */
 
@@ -247,6 +190,8 @@ footer {
       font-size: 16px;
       padding-left: 10px;
     }
+
+    
 
     .profile-picture {
     border-radius: 50%;
@@ -261,11 +206,13 @@ footer {
 
 /* Small device */
 
-  @media (min-width: 540px) {
+  @media (min-width: 500px) {
     .primary-title {
-      font-size: 24px;
+      font-size: 20px;
     }
+    
   }
+
 
   /* Tablet */
 
@@ -294,6 +241,44 @@ footer {
       font-size: 54px;
     }
   }
+
+  /* navigation mobile layout */
+
+  @media (min-width: 500px) {
+    header,
+    .primary-nav {
+      display: flex;
+    }
+
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .icon-image {
+      width: auto;
+    margin-bottom: -60px;
+    margin-top: -50px;
+    }
+
+    .primary-nav {  
+    padding-bottom: 100px;
+    }
+
+  }
+
+  @media (min-width: 830px) {
+      header {
+        flex-direction: inherit;
+      }
+
+      .icon-image {
+      width: auto;
+    }
+    
+
+    }
+
 
 
 
