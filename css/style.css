@@ -49,7 +49,7 @@ li, a {
  } 
  
  .primary-nav li :hover {
-   color: green;
+   color: rgb(14, 185, 91);
  }
 
 /* About me */
@@ -120,20 +120,13 @@ li, a {
 .about-me {
   padding-top: 200px;
   letter-spacing: 2px;
-  max-height: 100%;
-  font-size: 20px;
-
+  max-height: 100%
 }
 
 .container {
-  display: flex;
-  flex-wrap: nowrap;
   padding: 10px;
+  margin-top: -20px;
  
-}
-
-.column {
-  padding-right: 20px;
 }
 
 
@@ -153,11 +146,10 @@ footer {
 
 
 footer {
-  background-color: rgba(22, 33, 61, 0.904);
+  background-color: rgba(22, 33, 61, 60%);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px;
 
 } 
 
@@ -167,28 +159,32 @@ footer {
 }
 
 .list li {
-  padding: 20px;
+  padding: 3px;
+  padding-right: 10px;
    display: inline-flex;
+
+} 
   
-  
- }
 
 .list ul li a {
   text-decoration: none;
 }
 
-.list ul li a :hover {
-  color: teal;
-  visibility: visible;
-  opacity: 1;
-}
 
 
-/* Mobile layout */
 
     .primary-title {
       font-size: 16px;
       padding-left: 10px;
+  
+    }
+
+
+    .secondary-title {
+      
+      padding-left: 10px;
+      color: rgba(22, 33, 61, 0.904);
+  
     }
 
     
@@ -206,35 +202,56 @@ footer {
 
 /* Small device */
 
+@media (min-width: 300px) {
+    header,
+    .primary-nav {
+      display: flex;
+    }
+
   @media (min-width: 500px) {
-    .primary-title {
+    .primary-title
+     {
       font-size: 20px;
+    }
+
+    .front-developer {
+      font-size: 14px;
     }
     
   }
+
+  
 
 
   /* Tablet */
 
   @media (min-width: 768px) {
-    .primary-title {
+    .primary-title
+ {
       font-size: 32px;
     }
   }
 
+  .front-developer {
+      font-size: 20px;
+    }
+    
+
   /* Small desktop */
 
   @media (min-width: 900px) {
-    .primary-title {
+    .primary-title
+    {
       font-size: 48px;
     }
+
+    .front-developer {
+      font-size: 32px;
+    }
+
   }
 
-  @media (min-width: 900px) {
-    .primary-title {
-      font-size: 48px;
-    }
-  }
+
 
   @media (min-width: 1200px) {
     .primary-title {
@@ -244,10 +261,10 @@ footer {
 
   /* navigation mobile layout */
 
-  @media (min-width: 500px) {
-    header,
-    .primary-nav {
-      display: flex;
+  
+
+    .about-me {
+      padding-top: 120px;
     }
 
     header {
@@ -274,10 +291,23 @@ footer {
 
       .icon-image {
       width: auto;
+      margin-bottom: auto;
+      margin-top: auto;}
+
+      .primary-nav {
+        padding-bottom: 0px;
+      }
+    }
+
+    @media (min-width: 300px) {
+      .list {
+        display: flex;
+        paddin-
+      }
+
     }
     
 
-    }
 
 
 
