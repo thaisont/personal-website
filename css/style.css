@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
 
 body {
-  color: white;
+  color: black;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -332,32 +332,56 @@ footer {
   margin-bottom: 20%;
   }
 
+.icon-rounded{
+  padding: 20px;
+    margin-top: 50px;
+    display: inline-flex;
+    border-radius: 50%;
+    background-color: rgb(38, 80, 218, 10%)
+}
 
+.w-60{
+  width: 60px;
+}
 
+/* Utilities */
 
+.text-black{
+  color: black;
+}
 
+.text-white{
+  color: white;
+}
 
+.text-center{
+  text-align: center;
+}
 
+/* Container */
 
+.flex-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 96%;
+  padding: 0 calc(16px / 2);
+}
 
+.row{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
 
+.col{
+  flex: 1;
+}
 
-
-  
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
+.col-3 {
+  flex: 0 0 calc((100% / (12/3)));
+  max-width: calc((100% / (12/3)));
+}
+.col-4 {
+  flex: 0 0 calc((100% / (12/4)));
+  max-width: calc((100% / (12/4)));
+}
