@@ -9,6 +9,8 @@ body {
     box-sizing: border-box;    
 }
 
+img { max-width: 100%; 
+  height: auto }
 
 
 li, a {
@@ -59,30 +61,7 @@ li, a {
   margin-bottom: 40px;
 }
 
-#page2 .primary-title {
-  font-size:54px;
-  
-}
 
-#page2 .primary-header {
-    text-align: left;
-    
-}
-
-#page2 .row {
-  display: flex;
-  max-width: 90%;
-  margin: auto;
-}
-
-#page2 .column {
-  flex: 2;
-  padding-right: 8%;
-  color: black;
-  font-size: 20px;
-  margin-top: -4%;
-  
-}
 
 #page3 .primary-header {
     text-align: center;
@@ -184,6 +163,7 @@ footer {
       
       padding-left: 10px;
       color: rgba(22, 33, 61, 0.904);
+  
   
     }
 
@@ -306,6 +286,67 @@ footer {
       }
 
     }
+
+    /* 
+      page 2
+      */
+
+     #page2 .secondary-title {
+       font-size: 32px;
+       text-align: center;
+       text-decoration: underline;
+
+    }
+
+    #page2 .primary-title {
+  font-size:54px;
+  
+}
+
+#page2 .primary-header {
+    text-align: left;
+    
+}
+
+#page2 .container {
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+  
+#page2 .container li {
+  padding: 20px;
+  margin-top: 50px;
+  display: inline-flex;
+  border-radius: 50%; 
+  background-color: rgb(38, 80, 218, 10%);
+}
+
+#page2 .text-icon {
+  display: flex;
+}
+
+#page2 .text-icon li {
+  display: inline-flex;
+  margin: 10px auto;
+  margin-bottom: 20%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
     
 
 
