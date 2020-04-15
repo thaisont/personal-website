@@ -58,7 +58,7 @@ li, a {
 
 .primary-header {
   color: black;
-  margin-bottom: 40px;
+ 
 }
 
 
@@ -116,21 +116,18 @@ footer {
   text-align: center;
   color: black;
   width: 100%;
+  margin-top: 60px;
+  background-color: rgba(22, 33, 61, 60%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
 
 #main-footer a {
   color: rgba(9, 2, 66, 0.822);
 }
-
-
-footer {
-  background-color: rgba(22, 33, 61, 60%);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-} 
 
 .copy-right {
   padding: 10px;
@@ -282,7 +279,6 @@ footer {
     @media (min-width: 300px) {
       .list {
         display: flex;
-        paddin-
       }
 
     }
@@ -299,42 +295,13 @@ footer {
     }
 
     #page2 .primary-title {
-  font-size:54px;
+  font-size: 60px;
   
 }
-
-#page2 .primary-header {
-    text-align: left;
-    
-}
-
-#page2 .container {
-  display: flex;
-  justify-content: space-evenly;
-  
-}
-  
-#page2 .container li {
-  padding: 20px;
-  margin-top: 50px;
-  display: inline-flex;
-  border-radius: 50%; 
-  background-color: rgb(38, 80, 218, 10%);
-}
-
-#page2 .text-icon {
-  display: flex;
-}
-
-#page2 .text-icon li {
-  display: inline-flex;
-  margin: 10px auto;
-  margin-bottom: 20%;
-  }
 
 .icon-rounded{
   padding: 20px;
-    margin-top: 50px;
+  margin-top: 60px;
     display: inline-flex;
     border-radius: 50%;
     background-color: rgb(38, 80, 218, 10%)
@@ -363,7 +330,8 @@ footer {
 .flex-container{
   max-width: 1200px;
   margin: 0 auto;
-  width: 96%;
+  width: 90%;
+  margin-bottom: 5%;
   padding: 0 calc(16px / 2);
 }
 
@@ -381,7 +349,45 @@ footer {
   flex: 0 0 calc((100% / (12/3)));
   max-width: calc((100% / (12/3)));
 }
-.col-4 {
-  flex: 0 0 calc((100% / (12/4)));
-  max-width: calc((100% / (12/4)));
+
+.text-bold {
+  font-weight: 800;
+  font-size: 20px;
+  color: rgba(78, 80, 83, 0.808);
+}
+
+.icon-text {
+  padding: 0 30px;
+  
+}
+
+/* Container for skill bars */
+.container-box {
+  width: 50%; /* Full width */
+  background-color: rgba(187, 176, 176, 0.336); /* Grey background */
+  
+}
+
+.skills {
+  text-align: center; /* Right-align text */
+  padding-top: 5px;/* Add top padding */
+  padding-bottom: 5px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.html {
+
+  width: 50%; 
+  background-color: rgb(14, 132, 201);
+  align-content: center;
+} /* Green */
+
+.css {width: 50%; background-color: rgb(14, 132, 201);} /* Blue */
+.js {width: 20%; background-color: rgb(14, 132, 201);} /* Red */
+.photoshop {width: 40%; background-color: rgb(14, 132, 201);} /* Dark Grey */
+
+.bar-text {
+  padding: 10px;
+  text-align:;
+  padding-right: 35%;
 }
