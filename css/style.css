@@ -116,13 +116,14 @@ footer {
   text-align: center;
   color: black;
   width: 100%;
-  margin-top: 60px;
+  margin-top: 400px;
   background-color: rgba(22, 33, 61, 60%);
   display: flex;
   justify-content: space-between;
   align-items: center;
 
 }
+
 
 
 #main-footer a {
@@ -357,7 +358,7 @@ footer {
 }
 
 .icon-text {
-  padding: 0 30px;
+  padding: 0 0px;
   
 }
 
@@ -366,9 +367,11 @@ footer {
   width: 50%; /* Full width */
   background-color: rgba(187, 176, 176, 0.336); /* Grey background */
   
+  
 }
 
 .skills {
+
   text-align: center; /* Right-align text */
   padding-top: 5px;/* Add top padding */
   padding-bottom: 5px; /* Add bottom padding */
@@ -388,6 +391,20 @@ footer {
 
 .bar-text {
   padding: 10px;
-  text-align:;
   padding-right: 35%;
+  
 }
+
+.bar-skill {
+  margin-top: -45%;
+}
+
+.img-thai {
+  display: flex;
+  flex-direction: row-reverse;
+      padding: 30px 50px;
+    padding-left: 20%;
+    margin-bott
+
+}
+
