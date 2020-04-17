@@ -404,7 +404,13 @@ footer {
   flex-direction: row-reverse;
       padding: 30px 50px;
     padding-left: 20%;
-    margin-bott
 
 }
 
+.who-text {
+  margin-right: 50%;
+}
+
+.cotainer-img {
+
+}
