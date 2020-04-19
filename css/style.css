@@ -9,7 +9,6 @@ body {
     box-sizing: border-box;    
 }
 
-img { max-width: 100%; 
   height: auto }
 
 
@@ -116,7 +115,6 @@ footer {
   text-align: center;
   color: black;
   width: 100%;
-  margin-top: 400px;
   background-color: rgba(22, 33, 61, 60%);
   display: flex;
   justify-content: space-between;
@@ -328,12 +326,13 @@ footer {
 
 /* Container */
 
-.flex-container{
+.flex-container {
   max-width: 1200px;
   margin: 0 auto;
   width: 90%;
   margin-bottom: 5%;
   padding: 0 calc(16px / 2);
+  
 }
 
 .row{
@@ -366,8 +365,6 @@ footer {
 .container-box {
   width: 50%; /* Full width */
   background-color: rgba(187, 176, 176, 0.336); /* Grey background */
-  
-  
 }
 
 .skills {
@@ -378,16 +375,16 @@ footer {
   color: white; /* White text color */
 }
 
-.html {
+.level-html {
 
   width: 50%; 
   background-color: rgb(14, 132, 201);
   align-content: center;
-} /* Green */
+} 
 
-.css {width: 50%; background-color: rgb(14, 132, 201);} /* Blue */
-.js {width: 20%; background-color: rgb(14, 132, 201);} /* Red */
-.photoshop {width: 40%; background-color: rgb(14, 132, 201);} /* Dark Grey */
+.level-css {width: 50%; background-color: rgb(14, 132, 201);} 
+.level-js {width: 20%; background-color: rgb(14, 132, 201);} 
+.level-photoshop {width: 40%; background-color: rgb(14, 132, 201);} 
 
 .bar-text {
   padding: 10px;
@@ -399,18 +396,10 @@ footer {
   margin-top: -45%;
 }
 
-.img-thai {
+.img-thai{
   display: flex;
-  flex-direction: row-reverse;
-      padding: 30px 50px;
-    padding-left: 20%;
-
+  
 }
 
-.who-text {
-  margin-right: 50%;
-}
 
-.cotainer-img {
 
-}
