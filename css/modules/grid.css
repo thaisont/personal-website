@@ -1,0 +1,55 @@
+/* Grid */
+
+.flex-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+  margin-bottom: 5%;
+  padding: 0 calc(16px / 2);
+  
+}
+
+.row{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.col{
+  flex: 1;
+}
+
+.col-3 {
+  flex: 0 0 calc(100% / (12/3));
+  max-width: calc(100% / (12/3));
+}
+
+.col-4 {
+  flex: 0 0 calc(100% / (12/4));
+  max-width: calc(100% / (12/4));
+}
+
+.col-5 {
+  flex: 0 0 calc(100% / (12/5));
+  max-width: calc(100% / (12/5));
+}
+
+.col-6 {
+  flex: 0 0 calc(100% / (12/6));
+  max-width: calc(100% / (12/6));
+}
+
+.col-7 {
+  flex: 0 0 calc(100% / (12/7));
+  max-width: calc(100% / (12/7));
+}
+
+.col-8 {
+  flex: 0 0 calc(100% / (12/8));
+  max-width: calc(100% / (12/8));
+}
+
+.col-9 {
+  flex: 0 0 calc(100% / (12/9));
+  max-width: calc(100% / (12/9));
+}

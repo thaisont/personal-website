@@ -1,0 +1,60 @@
+/* Page layout */
+#page2 .secondary-title {
+  font-size: 32px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+#page2 .primary-title {
+  font-size: 60px;
+}
+
+.icon-rounded {
+  padding: 20px;
+  margin-top: 60px;
+  display: inline-flex;
+  border-radius: 50%;
+  background-color: rgb(38, 80, 218, 10%);
+}
+
+/* Skill bar */
+.bar{
+  width: 100%;
+  background-color: #ddd; 
+}
+
+.skills {
+  text-align: right; 
+  padding-top: 10px; 
+  padding-bottom: 10px;
+  color: white;
+}
+
+
+/* Width utility classes */
+.w-50{
+  width: 50%;
+}
+.w-60{
+  width: 60%;
+}
+.w-70{
+  width: 70%;
+}
+.w-80{
+  width: 80%;
+}
+.w-90{
+  width: 90%;
+}
+
+/* Background colours */
+.bg-red{
+  background: red;
+}
+.bg-blue{
+  background: blue;
+}
+.bg-green{
+  background: green;
+}

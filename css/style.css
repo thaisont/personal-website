@@ -1,23 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap");
+/*** Important ***/
+@import "./modules/reset.css";
+@import "./modules/base.css";
+@import "./modules/grid.css";
+/*** Custom styling ***/
+@import "header.css";
+@import "home.css";
+@import "about.css";
 
-body {
-  color: black;
-  font-family: 'Roboto', sans-serif;
+li,
+a {
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
 }
-
-* {
-    box-sizing: border-box;    
-}
-
-  height: auto }
-
-
-li, a {
-   font-weight: 500;
-   font-size: 18px;
-   text-decoration: none;
-}
-
 
 .icon-image {
   cursor: pointer;
@@ -25,62 +21,31 @@ li, a {
   padding: 10px;
 }
 
- header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px;
- }
 
-.primary-nav {
-  list-style: none;
-}
-
-.primary-nav li {
-   display: inline-flex;
-   padding: 10px;
- }
- 
-
- .primary-nav li a {
-   transition: all 0.8s ease 0s;
-  
-   color: rgb(19, 77, 185);
-  
- } 
- 
- .primary-nav li :hover {
-   color: rgb(14, 185, 91);
- }
 
 /* About me */
 
 .primary-header {
   color: black;
- 
 }
 
-
-
 #page3 .primary-header {
-    text-align: center;
+  text-align: center;
 }
 
 #page3 .video-gif {
-    display: block;
-    
+  display: block;
 }
 
 #page4 .primary-header {
-    text-align: center;
+  text-align: center;
 }
 
 #page4 .no-contact {
-    color: black;
-    font-size: 40px;
-    padding-left: 5px;
+  color: black;
+  font-size: 40px;
+  padding-left: 5px;
 }
-
 
 /* Banner */
 
@@ -89,25 +54,22 @@ li, a {
   text-align: center;
   padding-bottom: 10%;
   background-position: cover;
-  background:url(../img/default-social-3-b0dfab051089b234a4ec6b009154a1f5.png) no-repeat center / cover;
+  background: url(../img/default-social-3-b0dfab051089b234a4ec6b009154a1f5.png)
+    no-repeat center / cover;
   background-size: 120%;
   margin-top: -10px;
-  
-} 
+}
 
 .about-me {
   padding-top: 200px;
   letter-spacing: 2px;
-  max-height: 100%
+  max-height: 100%;
 }
 
 .container {
   padding: 10px;
   margin-top: -20px;
- 
 }
-
-
 
 /* Footer */
 
@@ -119,10 +81,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
-
-
 
 #main-footer a {
   color: rgba(9, 2, 66, 0.822);
@@ -136,98 +95,75 @@ footer {
 .list li {
   padding: 3px;
   padding-right: 10px;
-   display: inline-flex;
-
-} 
-  
+  display: inline-flex;
+}
 
 .list ul li a {
   text-decoration: none;
 }
 
+.primary-title {
+  font-size: 16px;
+  padding-left: 10px;
+}
 
+.secondary-title {
+  padding-left: 10px;
+  color: rgba(22, 33, 61, 0.904);
+}
 
-
-    .primary-title {
-      font-size: 16px;
-      padding-left: 10px;
-  
-    }
-
-
-    .secondary-title {
-      
-      padding-left: 10px;
-      color: rgba(22, 33, 61, 0.904);
-  
-  
-    }
-
-    
-
-    .profile-picture {
-    border-radius: 50%;
-    border-color: rgb(15, 231, 15);
-    border-style: outset;
-    position: absolute;
-    top:  -100px;
-    max-width: 100%;
-    left: 50%;
-    margin-left: -100px;
+.profile-picture {
+  border-radius: 50%;
+  border-color: rgb(15, 231, 15);
+  border-style: outset;
+  position: absolute;
+  top: -100px;
+  max-width: 100%;
+  left: 50%;
+  margin-left: -100px;
 }
 
 /* Small device */
 
 @media (min-width: 300px) {
-    header,
-    .primary-nav {
-      display: flex;
-    }
+  header,
+  .primary-nav {
+    display: flex;
+  }
 
   @media (min-width: 500px) {
-    .primary-title
-     {
+    .primary-title {
       font-size: 20px;
     }
 
     .front-developer {
       font-size: 14px;
     }
-    
   }
-
-  
-
 
   /* Tablet */
 
   @media (min-width: 768px) {
-    .primary-title
- {
+    .primary-title {
       font-size: 32px;
     }
   }
 
   .front-developer {
-      font-size: 20px;
-    }
-    
+    font-size: 20px;
+  }
 
   /* Small desktop */
 
   @media (min-width: 900px) {
-    .primary-title
-    {
+    .primary-title {
       font-size: 48px;
     }
 
     .front-developer {
       font-size: 32px;
     }
-
   }
-
-
 
   @media (min-width: 1200px) {
     .primary-title {
@@ -235,119 +171,23 @@ footer {
     }
   }
 
-  /* navigation mobile layout */
-
   
 
-    .about-me {
-      padding-top: 120px;
-    }
 
-    header {
-      flex-direction: column;
-      align-items: center;
-    }
 
-    .icon-image {
-      width: auto;
-    margin-bottom: -60px;
-    margin-top: -50px;
-    }
-
-    .primary-nav {  
-    padding-bottom: 100px;
-    }
-
-  }
-
-  @media (min-width: 830px) {
-      header {
-        flex-direction: inherit;
-      }
-
-      .icon-image {
-      width: auto;
-      margin-bottom: auto;
-      margin-top: auto;}
-
-      .primary-nav {
-        padding-bottom: 0px;
-      }
-    }
-
-    @media (min-width: 300px) {
-      .list {
-        display: flex;
-      }
-
-    }
-
-    /* 
-      page 2
-      */
-
-     #page2 .secondary-title {
-       font-size: 32px;
-       text-align: center;
-       text-decoration: underline;
-
-    }
-
-    #page2 .primary-title {
-  font-size: 60px;
-  
-}
-
-.icon-rounded{
-  padding: 20px;
-  margin-top: 60px;
-    display: inline-flex;
-    border-radius: 50%;
-    background-color: rgb(38, 80, 218, 10%)
-}
-
-.w-60{
-  width: 60px;
-}
 
 /* Utilities */
 
-.text-black{
+.text-black {
   color: black;
 }
 
-.text-white{
+.text-white {
   color: white;
 }
 
-.text-center{
+.text-center {
   text-align: center;
-}
-
-/* Container */
-
-.flex-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 90%;
-  margin-bottom: 5%;
-  padding: 0 calc(16px / 2);
-  
-}
-
-.row{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-}
-
-.col{
-  flex: 1;
-}
-
-.col-3 {
-  flex: 0 0 calc((100% / (12/3)));
-  max-width: calc((100% / (12/3)));
 }
 
 .text-bold {
@@ -358,48 +198,4 @@ footer {
 
 .icon-text {
   padding: 0 0px;
-  
 }
-
-/* Container for skill bars */
-.container-box {
-  width: 50%; /* Full width */
-  background-color: rgba(187, 176, 176, 0.336); /* Grey background */
-}
-
-.skills {
-
-  text-align: center; /* Right-align text */
-  padding-top: 5px;/* Add top padding */
-  padding-bottom: 5px; /* Add bottom padding */
-  color: white; /* White text color */
-}
-
-.level-html {
-
-  width: 50%; 
-  background-color: rgb(14, 132, 201);
-  align-content: center;
-} 
-
-.level-css {width: 50%; background-color: rgb(14, 132, 201);} 
-.level-js {width: 20%; background-color: rgb(14, 132, 201);} 
-.level-photoshop {width: 40%; background-color: rgb(14, 132, 201);} 
-
-.bar-text {
-  padding: 10px;
-  padding-right: 35%;
-  
-}
-
-.bar-skill {
-  margin-top: -45%;
-}
-
-.img-thai{
-  display: flex;
-  
-}
-
-
-
