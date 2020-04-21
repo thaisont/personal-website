@@ -12,7 +12,7 @@
 .row{
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .col{
@@ -20,13 +20,14 @@
 }
 
 .col-3 {
-  flex: 0 0 calc(100% / (12/3));
-  max-width: calc(100% / (12/3));
+  flex: 0 0 calc((100% / (12/3)));
+  max-width: calc((100% / (12/3)));
+  padding:  20px;
 }
 
 .col-4 {
-  flex: 0 0 calc(100% / (12/4));
-  max-width: calc(100% / (12/4));
+  flex: 0 0 calc((100% / (12/4)));
+  max-width: calc((100% / (12/4)));
 }
 
 .col-5 {

@@ -3,21 +3,25 @@
   font-size: 32px;
   text-align: center;
   text-decoration: underline;
+  margin-bottom: -15px;
 }
 
-#page2 .primary-title {
-  font-size: 60px;
+.primary-title,
+#page2 .primary-title
+  {
+  font-size: 54px;
 }
+
 
 .icon-rounded {
+  
   padding: 20px;
   margin-top: 60px;
-  display: inline-flex;
   border-radius: 50%;
   background-color: rgb(38, 80, 218, 10%);
 }
 
-/* Skill bar */
+/* Skill bar 
 .bar{
   width: 100%;
   background-color: #ddd; 
@@ -29,6 +33,7 @@
   padding-bottom: 10px;
   color: white;
 }
+*/
 
 
 /* Width utility classes */
@@ -58,3 +63,24 @@
 .bg-green{
   background: green;
 }
+
+
+.who-text {
+  text-align: center;
+  font-weight: 800;
+  font-size: 20px;
+  color: rgba(78, 80, 83, 0.808);
+}
+
+.image-text {
+  text-align: center;
+  font-weight: 200;
+  font-size: 14px;
+  color: rgba(78, 80, 83, 0.808);
+  line-height: 1.5;
+}
+
+.video-gif {
+  margin: 20px;
+}
+
