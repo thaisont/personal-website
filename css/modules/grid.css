@@ -21,8 +21,8 @@
 
 .col-3 {
   flex: 0 0 calc((100% / (12/3)));
-  max-width: calc((100% / (12/3)));
   padding:  20px;
+  margin-bottom: -25px;
 }
 
 .col-4 {
@@ -53,4 +53,8 @@
 .col-9 {
   flex: 0 0 calc(100% / (12/9));
   max-width: calc(100% / (12/9));
+}
+
+.test {
+  display: flex;
 }

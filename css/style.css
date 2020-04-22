@@ -158,6 +158,21 @@ footer {
       margin-top: -60px;
     }
 
+    .icon-image {
+      margin-left: 40px;
+    }
+  }
+
+  @media (min-width: 500px) {
+    .test {display: grid;
+    grid-template-columns: 50% 50%;
+    }
+
+    .icon-rounded {
+      margin-top: 0px;
+    }
+
+    .col-3
 
   }
 
@@ -174,10 +189,17 @@ footer {
   }
 
   .icon-image {
-    margin-left: 0;
-  }
+    margin-left: 40px;}
 
   }
+
+  @media (min-width: 830px) {  
+  .icon-image {
+    margin-left: 0;}
+  }
+
+  
+
 
   /* Small desktop */
 
@@ -190,6 +212,15 @@ footer {
     .front-developer {
       font-size: 32px;
     }
+
+    .icon-image {
+    margin-left: 0;}
+
+
+    .test {
+  display: flex;
+}
+
   }
 
   @media (min-width: 1200px) {
