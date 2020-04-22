@@ -127,7 +127,20 @@ footer {
 @media (min-width: 300px) {
   header,
   .primary-nav {
-    display: flex;
+    display: flex;}
+
+.primary-title,
+    #page2 .primary-title  {
+      margin-top: -60px;}
+
+  #page2 .primary-title {
+      font-size: 20px;
+    }
+
+    .icon-image {
+      margin-left: 40px;
+    }
+
   }
 
   @media (min-width: 500px) {
@@ -158,6 +171,10 @@ footer {
 
     .front-developer {
     font-size: 20px;
+  }
+
+  .icon-image {
+    margin-left: 0;
   }
 
   }
