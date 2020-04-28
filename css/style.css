@@ -161,6 +161,12 @@ footer {
     .icon-image {
       margin-left: 40px;
     }
+
+     .bio {
+   display: block; 
+  }
+
+
   }
 
   @media (min-width: 300px) {
@@ -191,11 +197,39 @@ footer {
   .icon-image {
     margin-left: 40px;}
 
+     .bio {
+   display: block; 
   }
 
-  @media (min-width: 830px) {  
-  .icon-image {
+  
+
+  }
+
+  
+  @media (min-width: 800px) {
+    .primary-title,
+    #page2 .primary-title  {
+      font-size: 48px;
+    }
+
+    .front-developer {
+      font-size: 32px;
+    }
+
+    .icon-image {
     margin-left: 0;}
+
+
+
+  .bio {
+    display: grid;
+
+    
+  
+
+
+}
+
   }
 
   
@@ -218,24 +252,28 @@ footer {
 
 
     .test {
-  display: flex;
+  display: flex;}
+
+  .bio {
+    display: flex;
+
+  
+
+
 }
 
   }
 
-  @media (min-width: 1200px) {
+
+@media (min-width: 1200px) {
     .primary-title,
     #page2 .primary-title  {
       font-size: 54px;
     }
+    
   }
 
-  @media (min-width 900px {
-    .col-3 {
-  flex: 0 0 calc((100% / (12/)));
-  max-width: calc((100% / (12/4)));
-}
-  })
+
 
   
 

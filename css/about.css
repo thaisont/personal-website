@@ -66,6 +66,7 @@
 
 
 .who-text {
+  max-width: 70%;
   text-align: center;
   font-weight: 800;
   font-size: 20px;
@@ -73,6 +74,7 @@
 }
 
 .image-text {
+  width: 71%;
   text-align: center;
   font-weight: 200;
   font-size: 14px;
@@ -84,3 +86,50 @@
   margin: 20px;
 }
 
+h1 {
+  text-align: center;
+}
+
+.nav-level {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-left: 7%;
+  
+}
+
+.level-container {
+  
+  background-color: rgb(177, 177, 226);
+  width: 80%;
+  border-radius: 5px;
+}
+
+.skill-container{
+  text-align: right;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+.css-class {
+  width: 50%;
+  background-color: rgba(41, 172, 41, 0.808);
+}
+
+.javascript-class {
+  width: 20%;
+  background-color: rgba(41, 172, 41, 0.808);
+}
+
+.html-class {
+  width: 45%;
+  background-color: rgba(41, 172, 41, 0.808);
+}
+
+.photoshop-class {
+  width: 50%;
+  background-color: rgba(41, 172, 41, 0.808);
+  
+  

@@ -21,7 +21,7 @@
 
 .col-3 {
   flex: 0 0 calc((100% / (12/3)));
-  padding:  20px;
+  padding:  30px;
   margin-bottom: -25px;
 }
 
@@ -46,7 +46,8 @@
 }
 
 .col-8 {
-  flex: 0 0 calc(100% / (12/8));
+  margin-right: -20%;
+  flex: 1 0 calc(90% / (12/8));
   max-width: calc(100% / (12/8));
 }
 
@@ -57,4 +58,9 @@
 
 .test {
   display: flex;
+}
+
+.bio {
+  display: flex;
+  flex: 1;
 }
