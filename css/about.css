@@ -99,7 +99,6 @@ h1 {
 }
 
 .level-container {
-  
   background-color: rgb(177, 177, 226);
   width: 80%;
   border-radius: 5px;
@@ -131,5 +130,4 @@ h1 {
 .photoshop-class {
   width: 50%;
   background-color: rgba(41, 172, 41, 0.808);
-  
-  
+}
