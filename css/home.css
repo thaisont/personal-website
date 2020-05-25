@@ -24,7 +24,7 @@
 }
 
 .home-block {
-  flex: 0 0 calc(100% / (12/12));
+  flex: 0 0 calc(100% / (12/8));
 }
 
 @media only screen and (min-width: 600px) {

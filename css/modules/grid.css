@@ -46,8 +46,7 @@
 }
 
 .col-8 {
-  margin-right: -20%;
-  flex: 1 0 calc(90% / (12/8));
+  flex: 0 0 calc(90% / (12/8));
   max-width: calc(100% / (12/8));
 }
 

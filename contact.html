@@ -40,15 +40,73 @@
       </div>
     </div>
 
-   <div class="flex-container">
-        <div class="row">
-            <h2>No Contact</h2>
-        </div>
-        <div class="video-gif">
-            <img src="img/giphy (2).gif" alt="Contact" >
-        </div>
-        </div>
-       
+  
+    <!--Form--> 
+
+  <form class="form" action="contact.html" method="POST">
+
+
+    <h1> Test Contact form</h1>
+
+    <fieldset>
+
+      <legend><span class="number">1 </span> Your basic info </legend>
+<div class="form-text">
+    <label for="name">Name:</label>   
+<input type="text" id="name" name="user_name">
+ <label for="mail">Email:</label>
+<input type="email" id="mail" name="user_email">
+    <label for="password">Password:</label>
+<input type="password" id="password" name="user_password">
+
+<label>Age:</label>
+
+<input type="radio" id="under_13" value="under_13" name="user_age"><label
+  for="under_13" class="light">Under 13 </label>
+  <input type="radio" id="over_13" value="over_13" name="user_age"><label
+  for="under_13" class="light"> 13 or older </label>
+
+    </fieldset>
+    <fieldset>
+ <legend><span class="number">2</span> Your profile</legend>
+<label class="bio-text" for="bio">Description</label>
+  <textarea id="bio" name="user_bio"></textarea> 
+  <br>
+  <label for="job">job role:</label>
+<select id="job" name="user_job">
+  <optgroup label="web"></optgroup>
+  <option value="Frontend_deveoper">Front end developer</option> 
+  <option value="php_developer">PHP developer</option> 
+  <option value="Python_developer">Python developer</option> 
+   <optgroup label="web2"></optgroup>
+  <option value="Frontend_deveoper">Front end developer</option> 
+  <option value="php_developer">PHP developer</option> 
+  <option value="Python_developer">Python developer</option> 
+
+</select>
+</br>
+  <label>Interest:</label>
+
+  <input type="checkbox" id="development" value="interest_developemnt" name="user_development">
+  <label class="light" for="development">Development</label><br>
+
+  <input type="checkbox" id="design" value="interest_design" name="user_design">
+  <label class="light" for="design">Design</label><br>
+
+  <input type="checkbox" id="business" value="interest_business" name="user_business">
+  <label class="light" for="interest_business">Business</label>
+
+    </fieldset>
+</div>
+
+
+
+<button type="submit">Submit</button>
+
+<p>To develop back end so submissions sends to a server</p>
+
+  </form>
+
 
    <footer>
         <div class="copy-right">

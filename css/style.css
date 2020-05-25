@@ -27,6 +27,11 @@ a {
 
 .primary-header {
   color: black;
+  margin-bottom: 30%;
+}
+
+#page2 .primary-header {
+margin-bottom: 0%;
 }
 
 #page3 .primary-header {
@@ -80,6 +85,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 
 #main-footer a {
@@ -219,18 +225,16 @@ footer {
     .icon-image {
     margin-left: 0;}
 
-
-
   .bio {
-    display: grid;
+    display: grid;}
 
-    
-  
-
+   .col-8 {
+    max-width: 100%; 
+    flex: 0 0 calc(90% / (12/8));
+  max-width: calc(100% / (12/8));
 
 }
 
-  }
 
   
 
@@ -255,7 +259,30 @@ footer {
   display: flex;}
 
   .bio {
-    display: flex;
+    display: flex;}
+
+    .who-text {
+  max-width: 70%;
+  text-align: center;
+  font-weight: 800;
+  font-size: 20px;
+  color: rgba(78, 80, 83, 0.808);
+}
+
+.image-text {
+  width: 71%;
+  text-align: center;
+  font-weight: 200;
+  font-size: 14px;
+  color: rgba(78, 80, 83, 0.808);
+  line-height: 1.5;
+}
+
+.col-8 {
+  margin-right: -20%;
+  flex: 1 0 calc(90% / (12/8));
+  max-width: calc(100% / (12/8));
+}
 
   
 
@@ -300,4 +327,75 @@ footer {
   color: rgba(78, 80, 83, 0.808);
 }
 
+/* form */
 
+.form {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+    padding-bottom: 20px;
+
+}
+
+.form-text {
+  display: flex;
+  justify-content: center;
+    flex-direction: column;
+}
+
+.bio-text {
+  display: flex;
+}
+
+/* project */
+
+.project-one {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  
+}
+
+.img-fire-fitness-description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(36, 62, 206, 0.6);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  
+
+}
+
+
+
+.img-wrap {
+position: relative;
+height: 274.17px;
+width: 400px;
+margin-right: 10px;
+}
+
+.img-wrap:hover .img-fire-fitness-description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.description {
+  transition: .7s;
+  transform: translateY(1em);
+}
+
+.img-wrap:hover .description {
+  transform: translateX(0);
+}
