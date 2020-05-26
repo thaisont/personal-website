@@ -358,13 +358,13 @@ footer {
   
 }
 
-.img-fire-fitness-description {
+.img-project {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(36, 62, 206, 0.6);
+  background: rgb(0, 38, 255, 0.4);
   color: #fff;
   visibility: hidden;
   opacity: 0;
@@ -386,7 +386,7 @@ width: 400px;
 margin-right: 10px;
 }
 
-.img-wrap:hover .img-fire-fitness-description {
+.img-wrap:hover .img-project {
   visibility: visible;
   opacity: 1;
 }
