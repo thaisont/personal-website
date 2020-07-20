@@ -353,7 +353,7 @@ footer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 10px;
+  
   
 }
 
@@ -397,4 +397,13 @@ margin-right: 10px;
 
 .img-wrap:hover .description {
   transform: translateX(0);
+}
+
+.container-project {
+  display: flex;
+    justify-content: center;
+    margin-bottom: 0rem;
+    padding: 20px;
+    flex-wrap: wrap;
+
 }
